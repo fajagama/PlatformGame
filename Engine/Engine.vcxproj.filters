@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Zdrojové soubory">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hlavičkové soubory">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Soubory zdrojů">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Components">
+      <UniqueIdentifier>{4f563595-ffb8-4f79-81bb-86c58e5c5b30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Enums">
+      <UniqueIdentifier>{b222e2e4-e790-4a90-a4e0-5e986c8b08ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Main">
+      <UniqueIdentifier>{1740a533-e2cf-4eb9-a9c3-e123c0a6b524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Managers">
+      <UniqueIdentifier>{11b2279a-5c3f-4f30-8625-6b84d1072c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Service">
+      <UniqueIdentifier>{ddb10467-01c5-4420-80c8-dc2e2e62213a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Components">
+      <UniqueIdentifier>{80b25e0d-cb9d-4a34-9a4a-e4e7d28fd527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Main">
+      <UniqueIdentifier>{5f180dc7-e16b-4b58-b056-68ff721364d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Managers">
+      <UniqueIdentifier>{a628228e-c5ec-4815-8e2d-fa1a7735f76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Utils">
+      <UniqueIdentifier>{e4a51378-3ccd-4562-84b5-a6bef71c9e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Service">
+      <UniqueIdentifier>{c8fe3198-d2a1-49c3-8266-1d31c14413da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Utils">
+      <UniqueIdentifier>{8fcec521-e5a2-4330-876f-b65d91dd64bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Components\Animation.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\AnimationController.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Collider.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Component.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\FixedPosition.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CharacterMoving.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\RenderImage.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\SimpleGravity.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\SoundController.cpp">
+      <Filter>Zdrojové soubory\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Camera.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Core.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\DebugLogging.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\ErrorLogging.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\GameObject.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Input.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Level.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Sprite.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\ColliderManager.cpp">
+      <Filter>Zdrojové soubory\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\SoundManager.cpp">
+      <Filter>Zdrojové soubory\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\TimeManager.cpp">
+      <Filter>Zdrojové soubory\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\WindowManager.cpp">
+      <Filter>Zdrojové soubory\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\Position.cpp">
+      <Filter>Zdrojové soubory\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\SoundEffect.cpp">
+      <Filter>Zdrojové soubory\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Rect.cpp">
+      <Filter>Zdrojové soubory\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SharedMemory.cpp">
+      <Filter>Zdrojové soubory\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Components\Animation.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\AnimationController.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Collider.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Component.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\FixedPosition.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CharacterMoving.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RenderImage.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\SimpleGravity.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\SoundController.h">
+      <Filter>Hlavičkové soubory\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\KeyCode.h">
+      <Filter>Hlavičkové soubory\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Camera.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Core.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\DebugLogging.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ErrorLogging.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\GameObject.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Input.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Level.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Sprite.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\ColliderManager.h">
+      <Filter>Hlavičkové soubory\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\SoundManager.h">
+      <Filter>Hlavičkové soubory\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\TimeManager.h">
+      <Filter>Hlavičkové soubory\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\WindowManager.h">
+      <Filter>Hlavičkové soubory\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\Position.h">
+      <Filter>Hlavičkové soubory\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\SoundEffect.h">
+      <Filter>Hlavičkové soubory\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Rect.h">
+      <Filter>Hlavičkové soubory\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SharedMemory.h">
+      <Filter>Hlavičkové soubory\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

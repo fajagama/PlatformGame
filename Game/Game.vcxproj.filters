@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Zdrojové soubory">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hlavičkové soubory">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Soubory zdrojů">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Levels">
+      <UniqueIdentifier>{31d9a472-b45c-4192-9557-72e61a356010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Levels">
+      <UniqueIdentifier>{2edc2a5e-15a5-4e6d-bec9-3d1776f1fb5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Main">
+      <UniqueIdentifier>{62cd1c8c-985d-414b-bd6e-99054feee74f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Main">
+      <UniqueIdentifier>{fed99f1a-1563-4114-b1c2-67f8f48ce8c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\MainMenu">
+      <UniqueIdentifier>{8298d964-4bc6-4b41-b65b-e29fcef1efed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\MainMenu">
+      <UniqueIdentifier>{45ba7898-59be-4f39-ab35-d13f6930e561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\SelectLevel">
+      <UniqueIdentifier>{14159d3d-8514-4273-8330-a946979dbd28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\SelectLevel">
+      <UniqueIdentifier>{9d9acc96-f553-4eae-9ebc-7f084393dd77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hlavičkové soubory\Settings">
+      <UniqueIdentifier>{9a1c4916-733d-485a-bdc7-4e9a5aa3a49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\Settings">
+      <UniqueIdentifier>{8bf23ff4-9ba0-4109-ab76-6b1b81e43485}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Levels\EndFlag.cpp">
+      <Filter>Zdrojové soubory\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\LevelMenu.cpp">
+      <Filter>Zdrojové soubory\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\PlayerController.cpp">
+      <Filter>Zdrojové soubory\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\LevelSetup.cpp">
+      <Filter>Zdrojové soubory\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu\ExitGame.cpp">
+      <Filter>Zdrojové soubory\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu\SelectLevel.cpp">
+      <Filter>Zdrojové soubory\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu\Settings.cpp">
+      <Filter>Zdrojové soubory\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectLevel\LoadLevelOne.cpp">
+      <Filter>Zdrojové soubory\SelectLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectLevel\LoadLevelThree.cpp">
+      <Filter>Zdrojové soubory\SelectLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectLevel\LoadLevelTwo.cpp">
+      <Filter>Zdrojové soubory\SelectLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\BtnBack.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\Fullscreen.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\MusicVolume.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\MusicVolumeDown.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\MusicVolumeUp.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\Resolution1360.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\Resolution1920.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\SoundEffectVolume.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\SoundEffectVolumeDown.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\SoundEffectVolumeUp.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\Resolution1024.cpp">
+      <Filter>Zdrojové soubory\Settings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Levels\EndFlag.h">
+      <Filter>Hlavičkové soubory\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\LevelMenu.h">
+      <Filter>Hlavičkové soubory\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\PlayerController.h">
+      <Filter>Hlavičkové soubory\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\LevelSetup.h">
+      <Filter>Hlavičkové soubory\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu\ExitGame.h">
+      <Filter>Hlavičkové soubory\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu\SelectLevel.h">
+      <Filter>Hlavičkové soubory\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu\Settings.h">
+      <Filter>Hlavičkové soubory\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectLevel\LoadLevelOne.h">
+      <Filter>Hlavičkové soubory\SelectLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectLevel\LoadLevelThree.h">
+      <Filter>Hlavičkové soubory\SelectLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectLevel\LoadLevelTwo.h">
+      <Filter>Hlavičkové soubory\SelectLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\BtnBack.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\Fullscreen.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\MusicVolume.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\MusicVolumeDown.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\MusicVolumeUp.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\Resolution1360.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\Resolution1920.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\SoundEffectVolume.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\SoundEffectVolumeDown.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\SoundEffectVolumeUp.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\Resolution1024.h">
+      <Filter>Hlavičkové soubory\Settings</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
