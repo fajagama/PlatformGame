@@ -19,7 +19,7 @@ private:
 	Position position;
  	list<Component*> components;
 	string name = "";
-	string tag = "";	
+	string tag = "";
 	int zIndex = 0;	
 	unsigned int height;
 	unsigned int width;

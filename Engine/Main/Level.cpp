@@ -47,7 +47,7 @@ Level & Level::addGameObject(GameObject & go)
 	if (nameExist) {
 		stringstream stringStream;
 		stringStream << newGo->getName() << " (" << gameObjects.size() << ")";
-		newGo->setName(stringStream.str());		
+		newGo->setName(stringStream.str());	
 	}
 	list<GameObject *>::iterator it = find_if(gameObjects.begin(), gameObjects.end(), [newGo](GameObject * item) { return item->getZIndex() > newGo->getZIndex(); });
 	gameObjects.insert(it, newGo);
