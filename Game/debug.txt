@@ -1,0 +1,7 @@
+Fri May  3 21:06:04 2019 | SDL initialization succeeded!
+Fri May  3 21:13:32 2019 | SDL initialization succeeded!
+Fri May  3 21:14:57 2019 | SDL initialization succeeded!
+Fri May  3 21:15:55 2019 | SDL initialization succeeded!
+Fri May  3 21:17:59 2019 | SDL initialization succeeded!
+Fri May  3 21:19:00 2019 | SDL initialization succeeded!
+Fri May  3 21:21:27 2019 | SDL initialization succeeded!

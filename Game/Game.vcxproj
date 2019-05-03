@@ -121,7 +121,7 @@ xcopy  "$(SolutionDir)Engine\SDL_RUN\x86\*" "$(OutDir)" /S /Y</Command>
       <AdditionalIncludeDirectories>$(ProjectDir)SelectLevel;$(ProjectDir)Settings;$(ProjectDir)MainMenu;$(ProjectDir)Main;$(ProjectDir)Levels;$(SolutionDir)Engine\Components;$(SolutionDir)Engine\Enums;$(SolutionDir)Engine\Main;$(SolutionDir)Engine\Managers;$(SolutionDir)Engine\Service;$(SolutionDir)Engine\Utils;$(SolutionDir)Engine\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
@@ -173,7 +173,7 @@ xcopy  "$(SolutionDir)Engine\SDL_RUN\x86\*" "$(OutDir)" /S /Y</Command>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>

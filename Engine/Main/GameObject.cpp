@@ -43,10 +43,11 @@ GameObject::GameObject(string name, unsigned int width, unsigned int height)
 GameObject::~GameObject()
 {
 	if (components.size() > 0) {
-		for (Component * com : components) {
+		for (auto& com : components) {
 			delete com;
 		}
 	}
+	components.clear();
 }
 
 Position & GameObject::getPosition()

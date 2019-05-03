@@ -4,7 +4,7 @@
 
 bool DebugLogging::debugMode = true;
 bool DebugLogging::fileEnable = true;
-std::ofstream DebugLogging::debugFile;
+ofstream DebugLogging::debugFile;
 
 void DebugLogging::enableDebugMode()
 {
@@ -26,35 +26,37 @@ void DebugLogging::disablePrintToFile()
 	fileEnable = false;
 }
 
-void DebugLogging::print(std::string msg)
+void DebugLogging::print(string msg)
 {
 	makeDebugLine(msg);
 }
 void DebugLogging::print(int msg)
 {
-	makeDebugLine(std::to_string(msg));
+	makeDebugLine(to_string(msg));
 }
 
-void DebugLogging::makeDebugLine(std::string msg)
+void DebugLogging::makeDebugLine(string msg)
 {
 	if (debugMode == true) {
-		std::string printLine = TimeManager::getFullCurrentDateTime() + " | " + msg + "\n";
+		string printLine = TimeManager::getFullCurrentDateTime() + " | " + msg + "\n";
 
 		printToConsole(printLine);
 		printToFile(printLine);
 	}
 }
 
-void DebugLogging::printToConsole(std::string msg)
+void DebugLogging::printToConsole(string msg)
 {
-		std::cout << msg;
+	cout << msg << endl;
 }
 
-void DebugLogging::printToFile(std::string msg)
+void DebugLogging::printToFile(string msg)
 {
-	if (DebugLogging::fileEnable == true) {
+	if (fileEnable == true) {
+		debugFile.open("debug.txt", ios::app);
 		if (debugFile.is_open()) {
 			debugFile << msg;
+			debugFile.close();
 		}
 		else {
 			printToConsole("Cannot load debug log file!");

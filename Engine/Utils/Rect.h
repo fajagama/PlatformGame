@@ -7,8 +7,10 @@
 
 class Rect {
 private:
-	Rect();
+	Rect() {}
 public:
+	Rect(Rect const&) = delete;
+	void operator=(Rect const&) = delete;
 	/**
 	@param width šíøka v pixelech
 	@param height výška v pixelech
@@ -32,4 +34,4 @@ public:
 	static SDL_Rect getRect(int offsetX, int offsetY, int width, int height);
 };
 
-#endif // !DESTINATION_RECT
+#endif // !RECT

@@ -43,9 +43,6 @@ private:
 
 	void init(string windowName);
 	void initWindow();
-
-	void loadFiles();
-	void closeFiles();
 public:
 	/**
     @return windowName název okna aplikace

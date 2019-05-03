@@ -189,19 +189,8 @@ void Core::initWindow()
 	}
 }
 
-void Core::loadFiles()
-{
-	DebugLogging::debugFile = std::ofstream("logs/debug.txt", std::ofstream::out | std::ofstream::app);
-}
-
-void Core::closeFiles()
-{
-	DebugLogging::debugFile.close();
-}
-
 Core::Core(string windowName)
 {
-	this->loadFiles();
 	init(windowName);
 	currentFPS = maxFPS;
 }
@@ -217,7 +206,6 @@ Core::~Core()
 	levels.clear();
 	gameObjectsToRemove.clear();
 
-	this->closeFiles();	
 	SDL_DestroyWindow(window);
 	SDL_DestroyRenderer(renderer);
 }

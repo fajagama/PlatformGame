@@ -8,9 +8,11 @@ using namespace std;
 
 class SharedMemory {
 private:
-	SharedMemory();
 	static map<string, string> values;
+	SharedMemory() {}
 public:
+	SharedMemory(SharedMemory const&) = delete;
+	void operator=(SharedMemory const&) = delete;
 	/**
 	Naète uložené hodnoty ze souboru
 	*/

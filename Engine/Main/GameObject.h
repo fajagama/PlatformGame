@@ -30,7 +30,7 @@ public:
 	GameObject(string name, unsigned int width, unsigned int height);
 	~GameObject();
 	/**
-	@return pozice s prostoru
+	@return pozice v prostoru
 	*/
 	Position & getPosition();
 	/**
@@ -66,7 +66,7 @@ public:
 	*/
 	string getTag();
 	/**
-	Volání funkcí v komponentách v pøípadì, že dojde ke kolizi a mùje kolizní komponenta je typu trigger
+	Volání funkcí v komponentách v pøípadì, že dojde ke kolizi a moje kolizní komponenta je typu trigger
 
 	@param go herní objekt, se kterým došlo ke kolizi
 	*/
@@ -119,15 +119,13 @@ public:
 	@return vrátí hledanou komponentu podle typu
 	*/
 	template<class Type>
-	Type * getComponent() {
-	
+	Type * getComponent() {	
 		for (Component * com : this->components)
 		{
 			if (typeid(Type) == typeid(*com)) {
 				return dynamic_cast<Type*>(com);
 			}
-		}
-			
+		}			
 		return nullptr;
 	}
 };

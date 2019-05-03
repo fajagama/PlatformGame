@@ -11,7 +11,6 @@ using namespace std;
 
 class ColliderManager {
 private:
-	static bool checkPointCollision(GameObject & go, int pointX, int pointY);
 	static bool checkPointCollision(int pointX, int pointX1, int pointX2, int pointY, int pointY1, int pointY2);
 	static bool checkCollision(GameObject & go1, GameObject & go2);
 	

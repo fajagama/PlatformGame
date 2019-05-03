@@ -23,22 +23,22 @@ public:
 	/**
 	Funkce nastavuje ukazatel na herní objekt, který vlastní danou komponentu
 
-	@param ge ukazatel na herní objekt
+	@param go ukazatel na herní objekt
 	*/
 	void setGameObject(GameObject * go);
 	/**
-	Funkce je voláda v rámci herní smyèky  
+	Funkce je volána v rámci herní smyèky  
 	*/
 	virtual void update();
 	/**
-	Funkce je voláda v rámci herní smyèky
+	Funkce je volána v rámci herní smyèky
 	Provádí vykreslování na plátno
 
-	@param renderer platno, na které se kreslý
+	@param renderer plátno, na které se kreslí
 	*/
 	virtual void render(SDL_Renderer * renderer);
 	/**
-	Provádí vymazání alokace grafických prvkù, které se následnì pøi dalším prùchodu alokují
+	Provádí vymazání alokace grafických prvkù, které se následnì pøi dalším volání funkce render alokují
 	*/
 	virtual void resetRender();
 	/**
@@ -58,7 +58,7 @@ public:
 	*/
 	virtual void onMouseClick();
 	/**
-	Funkce je volána pøi naètení levelu a nastuve poèáteèní stav komponenty
+	Funkce je volána pøi naètení levelu a nastaví poèáteèní stav komponenty
 	*/
 	virtual void onLoad();
 	/**

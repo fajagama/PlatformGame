@@ -10,12 +10,13 @@ using namespace std;
 class DebugLogging
 {
 private:
-	static void makeDebugLine(std::string msg);
-	static void printToConsole(std::string msg);
-	static void printToFile(std::string msg);
+	static void makeDebugLine(string msg);
+	static void printToConsole(string msg);
+	static void printToFile(string msg);
 
 	static bool debugMode;
 	static bool fileEnable;
+	static ofstream debugFile;
 public:
 	/**
 	Zapnutí ladícího módu
@@ -36,15 +37,11 @@ public:
 	/**
 	@param msg zpráva pro zápis do logù
 	*/
-	static void print(std::string msg);
+	static void print(string msg);
 	/**
 	@param msg zpráva pro zápis do logù
 	*/
 	static void print(int msg);
-	/**
-	Soubor pro zápis logù
-	*/
-	static std::ofstream debugFile;
 };
 
 
