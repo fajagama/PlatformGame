@@ -3,7 +3,7 @@
 #include "TimeManager.h"
 
 bool DebugLogging::debugMode = true;
-bool DebugLogging::fileEnable = true;
+bool DebugLogging::fileEnable = false;
 ofstream DebugLogging::debugFile;
 
 void DebugLogging::enableDebugMode()

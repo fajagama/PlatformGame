@@ -2,12 +2,11 @@
 #include "GameObject.h"
 #include "RenderImage.h"
 #include "KeyCode.h"
-#include "string";
-#include "WindowManager.h";
-#include "Core.h";
-#include "SoundManager.h";
-#include "SimpleGravity.h";
-#include "AnimationController.h";
+#include "WindowManager.h"
+#include "Core.h"
+#include "SoundManager.h"
+#include "SimpleGravity.h"
+#include "AnimationController.h"
 #include "CharacterMoving.h"
 #include "Input.h"
 
@@ -57,7 +56,7 @@ void PlayerController::onCollision(GameObject & go)
 		switch (counter)
 		{
 		case 1:
-			Core::findGameObjectByName("score")->getComponent<RenderImage>()->setImage("assets/score-1.png");
+		Core::findGameObjectByName("score")->getComponent<RenderImage>()->setImage("assets/score-1.png");
 			break;
 		case 2:
 			Core::findGameObjectByName("score")->getComponent<RenderImage>()->setImage("assets/score-2.png");
