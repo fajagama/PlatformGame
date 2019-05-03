@@ -2,11 +2,16 @@
 
 #include "SoundManager.h"
 #include "RenderImage.h"
+#include "SharedMemory.h"
+#include <sstream>
 
 void MusicVolume::update()
 {
 	if (musicVolume != SoundManager::getMusicVolume()) {
 		musicVolume = SoundManager::getMusicVolume();
+		stringstream ss;
+		ss << musicVolume;
+		SharedMemory::setValue("music", ss.str());
 
 		switch (musicVolume)
 		{

@@ -2,11 +2,17 @@
 
 #include "WindowManager.h"
 #include "Core.h"
+#include "SharedMemory.h"
 
 void Resolution1920::onMouseClick()
 {
 	WindowManager::setWidth(1920);
 	WindowManager::setHeight(1080);
+
+	SharedMemory::setValue("1024", "false");
+	SharedMemory::setValue("1360", "false");
+	SharedMemory::setValue("1920", "true");
+
 	Core::reloadWindow();
 }
 

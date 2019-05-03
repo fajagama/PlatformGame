@@ -24,7 +24,12 @@ void SharedMemory::loadValues()
 			{
 				myVector.push_back(item);
 			}
-			values[myVector[0]] = myVector[1];
+			if (myVector.capacity() == 2) {
+				values[myVector[0]] = myVector[1];
+			}
+			else {
+				values[myVector[0]] = "";
+			}
 		}
 		ifs.close();
 	}

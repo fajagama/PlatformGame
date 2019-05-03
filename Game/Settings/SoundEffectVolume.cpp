@@ -2,11 +2,16 @@
 
 #include "RenderImage.h"
 #include "SoundManager.h"
+#include "SharedMemory.h"
+#include <sstream>
 
 void SoundEffectVolume::update()
 {
 	if (volume != SoundManager::getSoundEffectVolume()) {
 		volume = SoundManager::getSoundEffectVolume();
+		stringstream ss;
+		ss << volume;
+		SharedMemory::setValue("effect", ss.str());
 
 		switch (volume)
 		{

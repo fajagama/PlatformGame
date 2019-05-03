@@ -5,7 +5,7 @@
 
 class SoundEffectVolume : public Component {
 private:
-	int volume = 0;
+	int volume = -20;
 public:
 	void update() override;
 	SoundEffectVolume * clone() override;

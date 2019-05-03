@@ -5,7 +5,7 @@
 
 class MusicVolume : public Component {
 private:
-	int musicVolume = 0;
+	int musicVolume = -20;
 public:
 	void update() override;
 	MusicVolume * clone() override;
