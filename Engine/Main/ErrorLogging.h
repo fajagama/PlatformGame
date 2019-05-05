@@ -6,8 +6,8 @@
 using namespace std;
 
 class ErrorLogging {
-	ErrorLogging() {}
 public:
+	ErrorLogging() = delete;
 	ErrorLogging(ErrorLogging const&) = delete;
 	void operator=(ErrorLogging const&) = delete;
 	/**

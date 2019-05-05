@@ -11,9 +11,8 @@ private:
 
 	static int musicVolume;
 	static int soundEffectVolume;
-
-	SoundManager() {}
 public:
+	SoundManager() = delete;
 	SoundManager(SoundManager const&) = delete;
 	void operator=(SoundManager const&) = delete;
 	/**

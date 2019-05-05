@@ -8,9 +8,8 @@ private:
 	static int width;
 	static int height;
 	static bool fullscreen;
-
-	WindowManager() {}
 public:
+	WindowManager() = delete;
 	WindowManager(WindowManager const&) = delete;
 	void operator=(WindowManager const&) = delete;
 	/**

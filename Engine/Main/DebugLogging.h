@@ -17,9 +17,8 @@ private:
 	static bool debugMode;
 	static bool fileEnable;
 	static ofstream debugFile;
-
-	DebugLogging() {}
 public:
+	DebugLogging() = delete;
 	DebugLogging(DebugLogging const&) = delete;
 	void operator=(DebugLogging const&) = delete;
 	/**

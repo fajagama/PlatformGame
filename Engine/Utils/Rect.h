@@ -6,9 +6,8 @@
 #include "Camera.h"
 
 class Rect {
-private:
-	Rect() {}
 public:
+	Rect() = delete;
 	Rect(Rect const&) = delete;
 	void operator=(Rect const&) = delete;
 	/**

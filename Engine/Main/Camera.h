@@ -8,9 +8,8 @@ private:
 	static GameObject * go;
 	static int offsetX;
 	static int offsetY;
-
-	Camera() {}
 public:
+	Camera() = delete;
 	Camera(Camera const&) = delete;
 	void operator=(Camera const&) = delete;
 	/**

@@ -10,9 +10,9 @@ class TimeManager
 private:
 	static float delta;
 	static float timeScale;
-	
-	TimeManager() {}
 public:
+
+	TimeManager() = delete;
 	TimeManager(TimeManager const&) = delete;
 	void operator=(TimeManager const&) = delete;
 	/**

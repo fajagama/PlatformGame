@@ -21,9 +21,8 @@ private:
 	static Position mousePosition;
 
 	static map<string, string> keysDown;
-
-	Input() {}
 public:
+	Input() = delete;
 	Input(Input const&) = delete;
 	void operator=(Input const&) = delete;
 	/**
