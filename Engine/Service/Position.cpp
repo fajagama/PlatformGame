@@ -2,8 +2,8 @@
 
 Position::Position()
 {
-	this->posX = 0;
-	this->posY = 0;
+	posX = 0;
+	posY = 0;
 }
 
 Position::Position(float posX, float posY)
@@ -18,12 +18,12 @@ Position::~Position()
 
 int Position::getPosX()
 {
-	return this->posX;
+	return posX;
 }
 
 int Position::getPosY()
 {
-	return this->posY;
+	return posY;
 }
 
 void Position::setPosX(float posX)
@@ -38,24 +38,24 @@ void Position::setPosY(float posY)
 
 int Position::getOldPosX()
 {
-	return this->oldPosX;
+	return oldPosX;
 }
 
 int Position::getOldPosY()
 {
-	return this->oldPosY;
+	return oldPosY;
 }
 
 
 void Position::setNewOldPosition()
 {
-	this->oldPosX = this->posX;
-	this->oldPosY = this->posY;
+	oldPosX = posX;
+	oldPosY = posY;
 }
 
 bool Position::isPositionChanged()
 {
-	return this->isPositionXChanged() || this->isPositionYChanged();
+	return isPositionXChanged() || isPositionYChanged();
 }
 
 bool Position::isPositionXChanged()

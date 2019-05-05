@@ -6,7 +6,10 @@
 using namespace std;
 
 class ErrorLogging {
+	ErrorLogging() {}
 public:
+	ErrorLogging(ErrorLogging const&) = delete;
+	void operator=(ErrorLogging const&) = delete;
 	/**
     Zapisuje chybové logy do souboru
 

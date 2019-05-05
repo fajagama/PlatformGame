@@ -6,6 +6,7 @@ class Component;
 #include <list>
 #include <typeinfo>
 #include <string>
+#include <map>
 
 #include "Component.h"
 #include "Position.h"
@@ -17,7 +18,7 @@ class GameObject
 {
 private:
 	Position position;
- 	list<Component*> components;
+ 	map<string, Component*> components;
 	string name = "";
 	string tag = "";
 	int zIndex = 0;	
@@ -41,7 +42,7 @@ public:
 	/**
 	@return seznam vlastnìných komponent
 	*/
-	list<Component*> & getComponents();
+	map<string, Component*> & getComponents();
 	/**
 	Pøidání nové komponenty hernímu objektu
 
@@ -120,13 +121,14 @@ public:
 	*/
 	template<class Type>
 	Type * getComponent() {	
-		for (Component * com : this->components)
-		{
-			if (typeid(Type) == typeid(*com)) {
-				return dynamic_cast<Type*>(com);
-			}
-		}			
-		return nullptr;
+		map<string, Component *>::iterator it;
+		it = components.find(typeid(Type).name());
+		if (it != components.end()) {
+			return dynamic_cast<Type*>(it->second);
+		}
+		else {
+			return nullptr;
+		}
 	}
 };
 

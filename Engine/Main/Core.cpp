@@ -79,8 +79,8 @@ void Core::gameLoop()
 			{
 				for (auto& com : go->getComponents()) 
 				{
-					com->onLoad();
-					com->resetRender();
+					com.second->onLoad();
+					com.second->resetRender();
 				}
 				go->getPosition().setNewOldPosition();
 			}
@@ -110,7 +110,7 @@ void Core::gameLoop()
 				{
 					for (auto& com : go->getComponents())
 					{
-						com->resetRender();
+						com.second->resetRender();
 					}
 				}
 			}
@@ -120,11 +120,10 @@ void Core::gameLoop()
 				if (go->isActive()) {
 					for (auto& com : go->getComponents())
 					{
-						com->update();
+						com.second->update();
 						if (go->getPosition().isPositionChanged()) {
 							ColliderManager::checkCollision(*go, currentLevel->getGameObjects());
 						}
-						com->render(this->renderer);
 					}
 					go->getPosition().setNewOldPosition();
 				}
@@ -135,7 +134,7 @@ void Core::gameLoop()
 				if (go->isActive()) {
 					for (auto& com : go->getComponents())
 					{
-						com->render(this->renderer);
+						com.second->render(this->renderer);
 					}
 				}
 			}

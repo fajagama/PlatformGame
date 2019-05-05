@@ -47,12 +47,13 @@ void AnimationController::resetRender()
 
 void AnimationController::update()
 {
-	animations[currentAnimation]->setGameObject(this->getGameObject());
+	animations[currentAnimation]->setGameObject(getGameObject());
 	animations[currentAnimation]->update();
 }
 
 void AnimationController::render(SDL_Renderer * renderer)
 {
+	animations[currentAnimation]->setGameObject(getGameObject());
 	animations[currentAnimation]->render(renderer);
 }
 

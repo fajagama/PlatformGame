@@ -37,22 +37,22 @@ void Settings::onLoad()
 			SoundManager::setSoundEffectVolume(volume);
 		}
 	}
-	if (SharedMemory::getValue("1024") == "true") {
+	if (SharedMemory::getValue("1024") == "true" && WindowManager::getWidth() != 1024) {
 		WindowManager::setWidth(1024);
 		WindowManager::setHeight(768);
 		Core::reloadWindow();
 	}
-	if (SharedMemory::getValue("1360") == "true") {
+	if (SharedMemory::getValue("1360") == "true" && WindowManager::getWidth() != 1360) {
 		WindowManager::setWidth(1360);
 		WindowManager::setHeight(768);
 		Core::reloadWindow();
 	}
-	if (SharedMemory::getValue("1920") == "true") {
+	if (SharedMemory::getValue("1920") == "true" && WindowManager::getWidth() != 1920) {
 		WindowManager::setWidth(1920);
 		WindowManager::setHeight(1080);
 		Core::reloadWindow();
 	}
-	if (SharedMemory::getValue("fullscreen") == "true") {
+	if (SharedMemory::getValue("fullscreen") == "true" && !WindowManager::isFullscreen()) {
 		WindowManager::setFullscreen(true);
 		Core::reloadWindow();
 	}

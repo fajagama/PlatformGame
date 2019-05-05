@@ -9,6 +9,7 @@ using namespace std;
 class SharedMemory {
 private:
 	static map<string, string> values;
+
 	SharedMemory() {}
 public:
 	SharedMemory(SharedMemory const&) = delete;

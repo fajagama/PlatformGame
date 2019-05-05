@@ -13,9 +13,9 @@ GameObject::GameObject(const GameObject & go)
 	active = go.active;
 
 	for (auto& com : go.components) {
-		Component * newCom = com->clone();
+		Component * newCom = com.second->clone();
 		newCom->setGameObject(this);
-		components.push_back(newCom);
+		components[typeid(*newCom).name()] = newCom;
 	}
 
 }
@@ -23,7 +23,7 @@ GameObject::GameObject(const GameObject & go)
 GameObject::GameObject(unsigned int width, unsigned int height)
 {
 	this->position = Position();
-	this->components = list<Component *>();
+	this->components = map<string, Component *>();
 	this->zIndex = 0;
 	this->name = "";
 	this->height = height;
@@ -33,7 +33,7 @@ GameObject::GameObject(unsigned int width, unsigned int height)
 GameObject::GameObject(string name, unsigned int width, unsigned int height)
 {
 	this->position = Position();
-	this->components = list<Component *>();
+	this->components = map<string, Component *>();
 	this->zIndex = 0;
 	this->name = name;
 	this->height = height;
@@ -44,7 +44,7 @@ GameObject::~GameObject()
 {
 	if (components.size() > 0) {
 		for (auto& com : components) {
-			delete com;
+			delete com.second;
 		}
 	}
 	components.clear();
@@ -60,7 +60,7 @@ void GameObject::setPosition(int x, int y)
 	this->position = Position(x, y);
 }
 
-list<Component *> & GameObject::getComponents()
+map<string, Component *> & GameObject::getComponents()
 {
 	return this->components;
 }
@@ -87,28 +87,28 @@ string GameObject::getTag()
 
 GameObject & GameObject::addComponent(Component & com)
 {
-	components.push_back(com.clone());
+	components[typeid(com).name()] = com.clone();
 	return *this;
 }
 
 void GameObject::callOnTrigger(GameObject & go)
 {
 	for (auto& com : components) {
-		com->onTrigger(go);
+		com.second->onTrigger(go);
 	}
 }
 
 void GameObject::callOnCollision(GameObject & go)
 {
 	for (auto& com : components) {
-		com->onCollision(go);
+		com.second->onCollision(go);
 	}
 }
 
 void GameObject::callOnMouseClick()
 {
 	for (auto& com : components) {
-		com->onMouseClick();
+		com.second->onMouseClick();
 	}
 }
 
